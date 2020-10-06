@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Ventanas.VentanaInicioSesion">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="30" bottom="30" right="30"/>
+    <constraints>
+      <xy x="20" y="20" width="916" height="755"/>
+    </constraints>
+    <properties>
+      <background color="-9616016"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="d03a2" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="20" left="20" bottom="20" right="20"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="150"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7110247"/>
+        </properties>
+        <border type="line">
+          <font size="8"/>
+          <color color="-9411220"/>
+        </border>
+        <children>
+          <component id="cff2a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="DialogInput" size="48" style="3"/>
+              <foreground color="-1"/>
+              <text value="Início De Sesión"/>
+            </properties>
+          </component>
+          <component id="62fb3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <font name="DialogInput" size="22" style="1"/>
+              <foreground color="-1"/>
+              <text value="Contraseña"/>
+            </properties>
+          </component>
+          <vspacer id="65720">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="e8b36">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="10"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="8e20f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="DialogInput" size="20" style="3"/>
+              <foreground color="-1"/>
+              <text value="Correo"/>
+            </properties>
+          </component>
+          <grid id="b7424" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-7110247"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c6028" class="javax.swing.JButton" binding="iniciarSesionButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9411220"/>
+                  <enabled value="true"/>
+                  <font name="DialogInput" size="18" style="1"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="true"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Iniciar Sesion"/>
+                </properties>
+              </component>
+              <component id="5100a" class="javax.swing.JButton" binding="registrarseButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9411220"/>
+                  <enabled value="true"/>
+                  <font name="DialogInput" size="18" style="1"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="true"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Registrarse"/>
+                </properties>
+              </component>
+              <hspacer id="5b8a">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="ebca2">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <vspacer id="b7709">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="10"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <grid id="52b89" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-7110247"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="49d8b" class="javax.swing.JTextField" binding="mailTextF">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="DialogInput" size="18" style="1"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="8e16b" class="javax.swing.JLabel" binding="invalidMail">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="DialogInput" size="11" style="0"/>
+                  <foreground color="-8445642"/>
+                  <text value="Invalid Mail"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a79f8" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-7110247"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c1e99" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="DialogInput" size="16" style="1"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="eafc0" class="javax.swing.JLabel" binding="invalidPass">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="DialogInput" size="11" style="0"/>
+                  <foreground color="-8445642"/>
+                  <text value="Invalid Pass"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <component id="9197e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalTextPosition value="0"/>
+          <icon value="icons/Logo.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <hspacer id="75725">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="d6482">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>
