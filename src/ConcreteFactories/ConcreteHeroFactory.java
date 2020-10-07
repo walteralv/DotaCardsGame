@@ -16,7 +16,7 @@ public class ConcreteHeroFactory implements IHeroFactory {
     public Hero getHero() {
         switch (name){
             case "AntiMage": return new AntiMage() ;
-            case "lION": return new Lion();
+            case "Lion": return new Lion();
             case "Necro": return new Necro();
             case "Queen": return new Queen();
             case "Sven": return new Sven();

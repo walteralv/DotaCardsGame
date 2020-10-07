@@ -1,5 +1,9 @@
 package Ventanas;
 
+import Abstract.Hero;
+import ConcreteHeros.Queen;
+import ConcreteHeros.Sven;
+import ConcreteHeros.Templar;
 import Principal.Map1vs1;
 
 import javax.swing.*;
@@ -25,15 +29,49 @@ public class VentanaMap1vs1 {
 
     private Map1vs1 map1vs1;
 
+    private Hero hero1 ;
+    private Hero hero2 ;
 
-    public VentanaMap1vs1(Map1vs1 map1vs1) {
+    public VentanaMap1vs1(Map1vs1 map1vs1,VentanaPrincipal vp) {
         this.map1vs1 = map1vs1;
+        hero1 = map1vs1.getHero1();
+        hero2 = map1vs1.getHero2();
+        update();
+        JFrame v = new JFrame();
+        v.setContentPane(getRootPanel());
+        v.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        v.pack();
+        v.setLocationRelativeTo(null);
+        v.setVisible(true);
+
         playTurnButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                map1vs1.play();
+                if(hero1.getVida() <= 0 || hero2.getVida() <= 0 ){
+                    v.setVisible(false);
+                    v.dispose();
+                    VentanaPrincipal Vp = new VentanaPrincipal(vp.getUser(),vp.getDota());
+                }
+                else{
+                    map1vs1.play();
+                    update();
+                }
             }
         });
+    }
+
+    public void update(){
+        getNameHero1().setText(hero1.getName());
+        getIconhero1().setIcon(hero1.getIcon());
+        getHpValue1().setText(Integer.toString(hero1.getVida()));
+        getManaValue1().setText(Integer.toString(hero1.getMana()));
+        getDamageValue1().setText(Integer.toString(hero1.getBasicDamage()));getArmorValue1().setText(Integer.toString(hero1.getArmadura()));
+
+        getNameHero2().setText(hero2.getName());getIconhero2().setIcon(hero2.getIcon());
+        getHpValue2().setText(Integer.toString(hero2.getVida()));
+        getManaValue2().setText(Integer.toString(hero2.getMana()));
+        getDamageValue2().setText(Integer.toString(hero2.getBasicDamage()));
+        getArmorValue2().setText(Integer.toString(hero2.getArmadura()));
     }
 
     public JPanel getRootPanel() {
@@ -166,13 +204,8 @@ public class VentanaMap1vs1 {
     }
 
     public static void main(String[] args) {
-//        VentanaMap1vs1 map = new VentanaMap1vs1();
-//        map.getHpValue1().setText("100");
-//        System.out.println(map.getHpValue1().getText());
-//        JFrame v = new JFrame();
-//        v.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-//        v.setContentPane(map.getRootPanel());
-//        v.pack();
-//        v.setVisible(true);
+        Map1vs1 map = new Map1vs1(new Sven(),new Templar());
+        VentanaMap1vs1 v = new VentanaMap1vs1(map,null);
+        map.setHero1(new Queen());
     }
 }
