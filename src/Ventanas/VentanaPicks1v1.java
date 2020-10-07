@@ -37,6 +37,16 @@ public class VentanaPicks1v1 {
         v.setVisible(true);
 
 
+        randomButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                factory = new RandomFactory();
+                v.setVisible(false);
+                v.dispose();
+                map1vs1 = new VentanaMap1vs1(new Map1vs1(factory.getHero(),randonFactory.getHero()),vp);
+            }
+        });
+
         lionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -49,10 +59,60 @@ public class VentanaPicks1v1 {
         });
 
 
-        randomButton.addActionListener(new ActionListener() {
+        queenButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                factory = new RandomFactory();
+                v.setVisible(false);
+                v.dispose();
+                factory = new ConcreteHeroFactory("Queen");
+                map1vs1 = new VentanaMap1vs1(new Map1vs1(factory.getHero(),randonFactory.getHero()),vp);
+            }
+        });
+        necroButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                v.setVisible(false);
+                v.dispose();
+                factory = new ConcreteHeroFactory("Necro");
+                map1vs1 = new VentanaMap1vs1(new Map1vs1(factory.getHero(),randonFactory.getHero()),vp);
+            }
+        });
+        antimageButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                v.setVisible(false);
+                v.dispose();
+                factory = new ConcreteHeroFactory("AntiMage");
+                map1vs1 = new VentanaMap1vs1(new Map1vs1(factory.getHero(),randonFactory.getHero()),vp);
+            }
+
+        });
+        terrorButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                v.setVisible(false);
+                v.dispose();
+                factory = new ConcreteHeroFactory("TerrorBlade");
+                map1vs1 = new VentanaMap1vs1(new Map1vs1(factory.getHero(),randonFactory.getHero()),vp);
+
+            }
+        });
+        svenButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                v.setVisible(false);
+                v.dispose();
+                factory = new ConcreteHeroFactory("Sven");
+                map1vs1 = new VentanaMap1vs1(new Map1vs1(factory.getHero(),randonFactory.getHero()),vp);
+            }
+        });
+        templarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                v.setVisible(false);
+                v.dispose();
+                factory = new ConcreteHeroFactory("Templar");
+                map1vs1 = new VentanaMap1vs1(new Map1vs1(factory.getHero(),randonFactory.getHero()),vp);
             }
         });
     }
