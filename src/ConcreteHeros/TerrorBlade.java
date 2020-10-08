@@ -12,8 +12,8 @@ public class TerrorBlade extends Hero {
         setManaXAttack(50);
         setArmadura(15);
         setBasicDamage(250);
+
         setAbility(new Metamorphosis(this));
         setIcon(new ImageIcon("src\\icons\\terror.jpg"));
-
     }
 }

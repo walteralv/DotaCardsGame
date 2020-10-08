@@ -10,8 +10,8 @@ public abstract class Hero {
     private int mana = 0 ;
     private final int MAX_MANA = 100;
     private int armadura;
-    private ImageIcon icon ;
 
+    private ImageIcon icon ;
     private Ability ability;
 
     @Override

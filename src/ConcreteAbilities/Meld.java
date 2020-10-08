@@ -14,7 +14,6 @@ public class Meld extends Ability {
         this.templar = templar;
         setName("Meld");
         setAnimation(new ImageIcon("src\\icons\\meldAnimation.jpg"));
-
     }
 
     @Override

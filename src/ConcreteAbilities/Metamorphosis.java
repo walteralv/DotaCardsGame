@@ -7,8 +7,7 @@ import ConcreteHeros.TerrorBlade;
 import javax.swing.*;
 
 public class Metamorphosis extends Ability {
-    TerrorBlade hero;
-
+    private TerrorBlade hero;
 
     public Metamorphosis(TerrorBlade hero) {
         this.hero = hero;
@@ -21,7 +20,6 @@ public class Metamorphosis extends Ability {
         hero.setIcon(new ImageIcon("src\\icons\\terrorMetaGif.gif"));
         hero.setBasicDamage(hero.getBasicDamage()+100);
         hero.basicAtack(enemyhero);
-
     }
 
     public TerrorBlade getHero() {

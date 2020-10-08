@@ -8,8 +8,8 @@ public abstract class Ability {
     private ImageIcon animation ;
 
     public abstract void throwAbility(Hero enemyhero);
-/////////////////////////////////////////////////////////////////
 
+/////////////////////////////////////////////////////////////////
     public ImageIcon getAnimation() {
         return animation;
     }

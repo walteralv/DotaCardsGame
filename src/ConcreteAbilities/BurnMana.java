@@ -2,6 +2,7 @@ package ConcreteAbilities;
 
 import Abstract.Hero;
 import Abstract.Ability;
+import ConcreteHeros.AntiMage;
 
 import javax.swing.*;
 
