@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="JIProlog">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/JIProlog" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/JIProlog/sdk/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/JIProlog/samples/Bible" />
+      <root url="file://$PROJECT_DIR$/JIProlog/samples/HanoisTowers" />
+      <root url="file://$PROJECT_DIR$/JIProlog/samples/RandomNumber" />
+      <root url="file://$PROJECT_DIR$/JIProlog/samples/Servlet" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/JIProlog" recursive="false" />
+  </library>
+</component>
