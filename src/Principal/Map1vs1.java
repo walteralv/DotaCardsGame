@@ -9,13 +9,13 @@ import Ventanas.VentanaPicks1v1;
 import javax.swing.*;
 
 public class Map1vs1 implements IMap {
-    Senda sendaCentral ;
-    Hero hero1;
-    Hero hero2;
+   private Senda sendaCentral ;
+   private Hero hero1;
+   private Hero hero2;
 
-    VentanaMap1vs1 vantanaMap1vs1 ;
+   private VentanaMap1vs1 vantanaMap1vs1 ;
 
-    VentanaPicks1v1 ventanaPicks1v1;
+   private VentanaPicks1v1 ventanaPicks1v1;
 
     public Map1vs1(Hero hero1,Hero hero2) {
         this.hero1 = hero1;

@@ -2,10 +2,12 @@ package Ventanas;
 
 import Principal.DotaBase;
 import Principal.User;
+import com.ugos.jiprolog.engine.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class VentanaPrincipal {
     private JButton PLAY1VS1Button;
@@ -54,6 +56,44 @@ public class VentanaPrincipal {
         PLAY3Vs3Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        ENQUEHEROEESTASButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                // New instance of prolog engine
+                JIPEngine jip = new JIPEngine();
+
+                JIPTerm queryTerm = null;
+
+                // parse query
+                try
+                {
+                    // consult file
+                    jip.consultFile("src\\Principal\\pro.pl");
+
+                    queryTerm = jip.getTermParser().parseTerm("mano.");
+
+                }
+                catch(JIPSyntaxErrorException | IOException ex)
+                {
+                    ex.printStackTrace();
+                    System.exit(0);
+                }
+
+
+                JIPQuery jipQuery = jip.openSynchronousQuery(queryTerm);
+                JIPTerm solution;
+
+                solution = jipQuery.nextSolution();
+
+
+                JIPVariable[] vars = solution.getVariables();
+
+
+
 
             }
         });
@@ -138,4 +178,8 @@ public class VentanaPrincipal {
     public void setVentanaPicks1v1(VentanaPicks1v1 ventanaPicks1v1) {
         this.ventanaPicks1v1 = ventanaPicks1v1;
     }
+
+
+
+
 }

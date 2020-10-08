@@ -6,11 +6,11 @@ import Ventanas.VentanaAbility;
 import javax.swing.*;
 
 public class Senda {
-    Hero hero1;
-    Hero hero2;
+   private Hero hero1;
+   private Hero hero2;
     private boolean playing = true;
-    VentanaAbility vHero1;
-    VentanaAbility vHero2;
+    private VentanaAbility vHero1;
+   private  VentanaAbility vHero2;
 
     public Senda(Hero hero1, Hero hero2) {
         this.hero1 = hero1;
