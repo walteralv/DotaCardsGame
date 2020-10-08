@@ -2,12 +2,6 @@ child_of(joe, ralf).
 child_of(mary, joe).
 child_of(steve, joe).
 
-aea(R1,R2,X):-
-    R1 == isMage(X),
-    R2 == isRangue(X)
-    -> X is lion.
-
-
 isMage(lion).
 isMage(necro).
 isMage(queen).
@@ -26,10 +20,3 @@ isRangue(templar).
 
 isDead(lion).
 isDead(necro).
-
-
-descendent_of(X, Y) :-
-    child_of(X, Y).
-descendent_of(X, Y) :-
-    child_of(Z, Y),
-    descendent_of(X, Z).

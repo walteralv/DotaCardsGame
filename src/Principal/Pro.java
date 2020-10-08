@@ -18,7 +18,7 @@ public class Pro {
             // consult file
             jip.consultFile("src\\Principal\\pro.pl");
 
-            queryTerm = jip.getTermParser().parseTerm("write('hello'),isMage(X),nl.");
+            queryTerm = jip.getTermParser().parseTerm("isMage(X).");
 //                    queryTerm = jip.getTermParser().parseTerm("isMage(X)");
         }
         catch(JIPSyntaxErrorException | IOException ex)
