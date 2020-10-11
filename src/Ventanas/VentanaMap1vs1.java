@@ -7,6 +7,7 @@ import ConcreteHeros.Templar;
 import Principal.Map1vs1;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -26,6 +27,8 @@ public class VentanaMap1vs1 {
     private JLabel nameHero2;
     private JLabel damageValue1;
     private JLabel damageValue2;
+    private JPanel panelHero1;
+    private JPanel panelHero2;
 
     private Map1vs1 map1vs1;
 
@@ -55,6 +58,10 @@ public class VentanaMap1vs1 {
                 else{
                     map1vs1.play();
                     update();
+                    if (hero1.getVida()<=0)
+                        panelHero1.setBackground(Color.RED);
+                    if (hero2.getVida()<=0)
+                        panelHero2.setBackground(Color.RED);
                 }
             }
         });

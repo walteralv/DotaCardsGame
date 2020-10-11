@@ -18,32 +18,25 @@ public class Senda {
     }
 
     public void playTurn(){
-        if (hero1.getMana() >= hero1.getMAX_MANA()){
-            hero1.throwAbility(hero2);
-            System.out.println(hero1.getName()+" throw "+hero1.getAbility().getName());
-            vHero1 = new VentanaAbility(hero1);
+        if (hero1.getVida()>=0 && hero2.getVida()>=0) {
+            if (hero1.getMana() >= hero1.getMAX_MANA()) {
+                hero1.throwAbility(hero2);
+                System.out.println(hero1.getName() + " throw " + hero1.getAbility().getName());
+                vHero1 = new VentanaAbility(hero1);
 
-        }
-        else
-            hero1.basicAtack(hero2);
+            } else
+                hero1.basicAtack(hero2);
 
-        if (hero2.getMana() >= hero2.getMAX_MANA()) {
-            hero2.throwAbility(hero1);
-            System.out.println(hero2.getName()+" usó "+hero2.getAbility().getName());
-            vHero2 = new VentanaAbility(hero2);
+            if (hero2.getMana() >= hero2.getMAX_MANA()) {
+                hero2.throwAbility(hero1);
+                System.out.println(hero2.getName() + " usó " + hero2.getAbility().getName());
+                vHero2 = new VentanaAbility(hero2);
+            } else
+                hero2.basicAtack(hero1);
         }
-        else
-            hero2.basicAtack(hero1);
+
         System.out.println(hero1);
         System.out.println(hero2);
-        if (hero1.getVida() <= 0) {
-            playing = false;
-            hero1 = null;
-        }
-        if (hero2.getVida() <= 0) {
-            hero2 = null;
-            playing = false;
-        }
     }
 
     ////////////////////////////////////////

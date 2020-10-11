@@ -19,7 +19,6 @@ public class AntiMage extends Hero {
         setBasicDamage(200);
         setAbility(new VacioDeMana());
         setIcon(new ImageIcon("src\\icons\\antimage.jpg"));
-
     }
 
     @Override

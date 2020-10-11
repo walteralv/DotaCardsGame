@@ -1,4 +1,3 @@
-
 %heroesc
 heroe(terrorblade):-terrorblade.
 heroe(lion):- lion.
@@ -43,7 +42,7 @@ axe:-
 
 %preguntas
 preguntar(Pregunta):-
-   write('A usted le gusta ' ),
+    write('A usted le gusta ' ),
     write(Pregunta),
     write('?'),
     read(Respuesta),
@@ -72,6 +71,3 @@ deshacer.
 
 mano:-    heroe(X),
     write(' como su primero heroe'),deshacer.
-
-
-

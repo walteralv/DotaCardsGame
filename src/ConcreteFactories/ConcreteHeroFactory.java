@@ -12,6 +12,8 @@ public class ConcreteHeroFactory implements IHeroFactory {
     public ConcreteHeroFactory(String name) {
         this.name = name;
     }
+
+
     @Override
     public Hero getHero() {
         switch (name){
@@ -25,4 +27,14 @@ public class ConcreteHeroFactory implements IHeroFactory {
             default: return null;
         }
     }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

@@ -23,7 +23,6 @@ public class VentanaPicks1v1 {
     IHeroFactory factory ;
     IHeroFactory randonFactory = new RandomFactory();
 
-    VentanaPrincipal vp ;
     VentanaMap1vs1 map1vs1;
 
 

@@ -22,6 +22,7 @@ public class VentanaPrincipal {
     private VentanaInicioSesion vi;
 
     private VentanaPicks1v1 ventanaPicks1v1;
+    private Ventana3vs3Picks ventana3vs3Picks;
 
     public VentanaPrincipal(User user, DotaBase dota) {
         this.user = user;
@@ -56,7 +57,9 @@ public class VentanaPrincipal {
         PLAY3Vs3Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                v.setVisible(false);
+                v.dispose();
+                ventana3vs3Picks = new Ventana3vs3Picks(I);
             }
         });
         ENQUEHEROEESTASButton.addActionListener(new ActionListener() {
